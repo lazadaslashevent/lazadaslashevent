@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazada Slash Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" integrity="sha256-zIG416V1ynj3Wgju/scU80KAEWOsO5rRLfVyRDuOv7Q=" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <body>
+    <section class="hero is-bold is-fullheight is-danger">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-2">
+            Lazada Slash Event
+          </h1>
+          <h2 class="subtitle">
+            Siguradohin mong magagawa mo ang task dahil makakatanggap ng coins.ph peso ang unang 100 na tao na makakatapos ng Task bilang aking pasasalamat. At kong sakali na pinalad ako na makuha ang target kong product ay magbibigay din ako ng additional reward at ibibigay ko ito gamit ang gcash, load o kaya gcash.
+          </h2>
+          <article class="message">
+  <div class="message-header">
+    <p>Task</p>
+  </div>
+  <div class="message-body">
+    Bisitahin ang link na ito <a target="_blank" class="button is-small is-success" href="https://smarturl.it/8e813q?IQid=facebook">click here to view the product</a> at i slash mo, pagkatapos ay kunan mo ito ng screen shot at i post mo yong screen shot dito, dahil ito ang gagamitin kong patunay na nagawa mo ang task at para ma bigyan kita ng reward kapalit nito.
+  </div>
+</article>
+
+<article class="message">
+  <div class="message-header">
+    <p>Enter the correct answer para magpakita ang next Task</p>
+  </div>
+  <div class="message-body">
+    magkano ang original price ng product?
+    <div class="control" style="text-align: center;">
+            <input onchange="checkInput(this.value)" class="input is-hovered" style="width: 100px;""  type="text" placeholder="952.68">   
+          </div>
+  </div>
+</article>
+
+
+          <div class="field">
+          <div class="control has-text-centered">
+            <button  id="myTask" class="button is-dark is-rounded has-text-centered is-hidden">Submit</button>
+            
+          </div>
+
+          </div><progress class="progress is-success" value="45" max="100">45%</progress>
+          
+        </div>
+      </div>
+    </section>
+    
+    <script>
+    function checkInput(val) {
+      var element, name, arr;
+      element = document.getElementById("myTask");
+      name = "is-hidden";
+      arr = element.className.split(" ");
+      if (val == "15,999" || val == "15,999.00" || val == "15999.00" || val == "15999" || val == "6,899" || val == "6,899.00" || val == "6899.00" || val == "6899"){
+        element.className = element.className.replace(/\bis-hidden\b/g, "");
+           
+      }else{
+        element.className += " " + name;
+      }  
+    }
+    </script>
+  </body>
+</html>
